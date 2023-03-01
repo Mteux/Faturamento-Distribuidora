@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faturamento da Empresa</title>
+
+    <script>
+        /*
+            4) Dado o valor de faturamento mensal de uma distribuidora, detalhado por estado:
+
+            SP – R$67.836,43
+            RJ – R$36.678,66
+            MG – R$29.229,88
+            ES – R$27.165,48
+            Outros – R$19.849,53
+
+            Escreva um programa na linguagem que desejar onde calcule o percentual de representação que cada estado teve dentro do valor total mensal da distribuidora.
+        */
+        var sp = 67836.43
+        var rj = 36678.66
+        var mg = 29229.88
+        var es = 27165.48
+        var out = 19849.53
+        //Realizamos a soma para encontrar o total de faturamento
+        var total = sp+rj+mg+es+out
+        //Encontramos o percentual de cada estado
+        var psp = ((sp/total)*100);
+        var prj = ((rj/total)*100);
+        var pmg = ((mg/total)*100);
+        var pes = ((es/total)*100);
+        var pout = ((out/total)*100);
+
+        //printamos no html o percentual de cada estado
+        document.write('O percentural de faturamento de SP foi: ' + psp.toFixed(2) + '%' + '<br>')
+        document.write('O percentural de faturamento de RJ foi: ' + prj.toFixed(2) + '%' + '<br>')
+        document.write('O percentural de faturamento de MG foi: ' + pmg.toFixed(2) + '%' + '<br>')
+        document.write('O percentural de faturamento de ES foi: ' + pes.toFixed(2) + '%' + '<br>')
+        document.write('O percentural de faturamento dos OUTROS foi: ' + pout.toFixed(2) + '%' + '<br>')
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
